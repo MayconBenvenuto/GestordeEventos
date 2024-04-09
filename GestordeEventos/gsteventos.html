@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+    <script>
+      dayjs.extend(window.dayjs_plugin_relativeTime)
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script>
+      dayjs.locale('pt-br')
+    </script>
+    <link rel="stylesheet" href="gsteventos.css">
+    <script type="text/javascript" src="./gsteventos.js" defer=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="container">
+
+        <header>
+        <img width="96" height="96" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/000000/external-edit-spread-sheet-table-drop-down-menu-document-pencil-selection-table-shadow-tal-revivo.png" alt="external-edit-spread-sheet-table-drop-down-menu-document-pencil-selection-table-shadow-tal-revivo"/>
+
+            </header>
+        <form onsubmit="adicionarParticipante(event)">
+            <fieldset>
+            <legend>Inscrição</legend>
+            <div>
+                
+                <input 
+                    type="text"
+                    placeholder="Nome completo"
+                    name = "nome"
+                    required>  
+                
+                        
+                 <input type="email"
+                           placeholder="Email"
+                           name = "email"                    
+                           required>
+                          
+                    <button>
+                        REALIZAR INSCRIÇÃO 
+                    </button>
+            </div>
+            </fieldset>
+        </form>
+        
+        <table>
+        <thead>
+            <tr>
+                <th>Participante</th>
+                <th>Data da inscrição</th>
+                <th>Data do check-in</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+        </table>
+        
+    </div>
+</body>
+</html>
